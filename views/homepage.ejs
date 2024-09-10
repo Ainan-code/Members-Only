@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <%- include('./partials/head'); %>
+</head>
+<body class="container">
+
+  <header>
+    <%- include('./partials/header'); %>
+  </header>
+ <main>
+  <h2> Welcome</h2> 
+  <section class="message">
+      
+          <% data.forEach(data=> { %>
+           
+            
+                <i></i>
+                <div>
+                  <span> <%= data.title %>  </span> 
+                  <%= data.content %>
+                </div>
+              </section> <% }) %>
+           
+            
+        
+
+  </section>
+    
+
+ </main>
+  
+   
+</body>
+</html>
